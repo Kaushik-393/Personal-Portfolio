@@ -1,0 +1,76 @@
+.morning-sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #87ceeb 0%, #b3e0ff 100%);
+  overflow: hidden;
+  z-index: 0;
+}
+
+.cloud {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.cloud1 {
+  width: 120px; height: 60px; top: 60px; left: -150px;
+  animation: cloud-move 40s linear infinite;
+}
+.cloud2 {
+  width: 90px; height: 45px; top: 120px; left: -100px;
+  animation: cloud-move 60s linear infinite 10s;
+}
+.cloud3 {
+  width: 70px; height: 35px; top: 200px; left: -80px;
+  animation: cloud-move 50s linear infinite 20s;
+}
+@keyframes cloud-move {
+  0% { left: -150px; }
+  100% { left: 110vw; }
+}
+
+.bird {
+  position: absolute;
+  width: 40px; height: 40px;
+  background: none;
+  top: 180px;
+  left: -50px;
+  z-index: 2;
+}
+.bird1 {
+  animation: bird-fly 18s linear infinite;
+  top: 180px;
+}
+.bird2 {
+  animation: bird-fly 22s linear infinite 6s;
+  top: 100px;
+}
+.bird3 {
+  animation: bird-fly 25s linear infinite 12s;
+  top: 250px;
+}
+@keyframes bird-fly {
+  0% { left: -50px; }
+  100% { left: 110vw; }
+}
+
+.bird::before, .bird::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 8px;
+  border-radius: 50% 50% 0 0;
+  background: #222;
+  top: 16px;
+}
+.bird::before {
+  left: 0;
+  transform: rotate(-20deg);
+}
+.bird::after {
+  right: 0;
+  transform: rotate(20deg);
+}
