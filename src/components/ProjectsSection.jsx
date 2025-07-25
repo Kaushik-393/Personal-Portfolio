@@ -19,7 +19,7 @@ const projects = [
     image: "/projects/project2.png",
     tags: ["YOLOv8", "Python", "Streamlit"],
     // demoUrl removed
-    githubUrl: "https://github.com/Kaushik-393/Smart-Waste-Management.git",
+    githubUrl: "https://github.com/Kaushik-393/Smart-Waste-Management",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const projects = [
     image: "/projects/project3.png",
     tags: ["ReactJS", "TailwindCSS", "HTML&CSS"],
     // demoUrl removed
-    githubUrl: "#",
+    githubUrl: "",
   },
 ];
 
@@ -80,6 +80,7 @@ export const ProjectsSection = () => {
                     <a
                       href={project.githubUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <Github size={20} />

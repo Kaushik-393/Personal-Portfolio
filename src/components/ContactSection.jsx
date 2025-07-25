@@ -54,7 +54,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <span className="text-muted-foreground select-text hover:text-primary transition-colors cursor-pointer">
-                    hello@gmail.com
+                    kaushin393@gmail.com
                   </span>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Phone</h4>
                   <span className="text-muted-foreground select-text hover:text-primary transition-colors cursor-pointer">
-                    (+91) 1234567890
+                    (+91) 9108630859
                   </span>
                 </div>
               </div>
